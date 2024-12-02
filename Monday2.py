@@ -10,8 +10,8 @@ st.title("BizDev Dashboard")
 @st.cache_data  # Cache the data to optimize app performance
 def load_data():
     activity_df = pd.read_csv("sdr_activity_metrics_2024_more_variance.csv")
-SDR_df = pd.read_csv("sdr_bizdev_data_2024_refined (1).csv")
-    return activity_df, SDR_df
+    SDR_df = pd.read_csv("sdr_bizdev_data_2024_refined (1).csv")
+return activity_df, SDR_df
 
 activity_df, SDR_df = load_data()
 
